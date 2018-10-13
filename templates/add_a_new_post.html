@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style> 
+
+    form {
+        margin-left: 20px;
+    }
+
+    textarea {
+        text-align: left;
+    }
+
+    #submit {
+        margin-left: 20px;
+    }
+    
+</style>
+    <form method='post'>
+        <label>
+            Title for your new blog:
+            <br />
+            <input type="text" name='blog_title' />
+        </label>
+        <br />
+        <br />
+        <label>
+            Your new blog:
+            <br />
+            <textarea name="blog_content" cols="30" rows="10"></textarea>
+        </label>
+        <br />
+        <br />
+        <input id="submit" type="submit" value="Add Entry">
+    </form>
+
+{% endblock %}
